@@ -1,7 +1,5 @@
 # dz-pjs
 
-过去两年的项目汇总：
-
 | 项目 | 描述 | 关键词 |
 | --- | --- | --- |
 | dz-code | 语言语法学习记录 | js docker rust golang |
