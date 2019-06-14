@@ -1,0 +1,20 @@
+<template>
+  <style>
+    p {
+      color: red;
+    }
+  </style>
+  <p>this is a web component</p>
+</template>
+<script>
+  (function(){
+    const element = Object.create(HTMLElement.prototype);
+    const template = document.currentScript.ownerDocument.querySelector('template').content;
+    element.createdCallback = function () {
+      const clone = document.importNode(template, true); shadowRoot.appendChild(clone);
+    }
+    document.registerElement('test-me', {
+      prototype: element
+    });
+  }())
+</script>

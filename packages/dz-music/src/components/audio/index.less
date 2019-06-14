@@ -1,0 +1,60 @@
+.dz-audio{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  height: 60px;
+  .controls{
+    flex: 2;
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+    display: -webkit-flex;
+    margin-top: 5px;
+    max-width: 240px;
+    .anticon{
+      cursor: pointer;
+      transition: all .3s;
+    }
+    .anticon:hover{
+      transform: scale(1.2);
+    }
+    .anticon.play:hover{
+      transform: scale(1.4);
+    }
+    .prev,.next{
+      flex: 1.2;
+    }
+    .play{
+      margin-top: -5px;
+      font-size: 40;
+      flex: 1;
+    }
+    .pattern{
+      font-size: 30px;
+      flex: 1;
+    }
+  }
+  .sliders{
+    flex: 7.6;
+    .ant-row.ant-form-item{
+      padding-top: 10px;
+      margin-bottom: 0;
+    }
+  }
+  .time{
+    flex: 0.2;
+    padding-top: 20px;
+  }
+  .sound{
+    flex: 0.2;
+    font-size: 25px;
+    padding: 17px 20px 0 20px;
+    .anticon{
+      cursor: pointer;
+      transition: all .3s;
+    }
+    .anticon:hover{
+      transform: scale(1.2);
+    }
+  }
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="26px" viewBox="0 0 21 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>862DA7E1-9F7A-430A-8FD6-F9F46D565811</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FCA033" offset="0%"></stop>
+            <stop stop-color="#FE751A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="通用的交互规则" transform="translate(-125.000000, -151.000000)" fill="url(#linearGradient-1)">
+            <g id="框架" transform="translate(105.000000, 134.000000)">
+                <g id="side-bar">
+                    <g id="logo">
+                        <path d="M20.9186887,18.4633225 C20.9186887,19.8234424 22.2078842,22.2257601 24.590815,22.8530191 C27.2155522,23.5438968 35.0398254,23.6769726 35.0398254,29.8211227 C35.0398254,36.8256289 26.3121078,39.1630399 26.3121078,33.5458698 L26.3121078,28.4808353 C26.3121078,26.469932 25.0854666,25.1152209 23.1193011,25.1152209 C20.9932456,25.1152209 20.0006133,26.4572254 20.0006133,28.4808353 C20.0000876,28.473881 20,28.5010113 20,36.0883892 C20,42.6915218 25.8001969,43 28.0316484,43 C33.7852363,43 40.9995619,39.4417263 41,29.6859864 C41.0004381,19.5338525 29.4279045,17.080365 23.8234305,17.0018074 C22.0626252,16.9771669 20.9186887,17.1912901 20.9186887,18.4633225 Z" id="LOGO"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

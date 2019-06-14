@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>IM</title>
+  <style>
+    .content{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    #message{
+      min-height: 400px;
+      border: 1px solid;
+      margin: 10px 0;
+      padding: 10px;
+    }
+    #text{
+      height: 30px;
+    }
+    button{
+      width: 120px;
+      height: 30px;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <pre id="message">start chatting: </pre>
+    <input id="text" />
+    <button id="sub">提交</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+  <script>
+    ajax = () => {
+      const xhr = new XMLHttpRequest()
+      xhr.open('GET', '/test')
+      xhr.timeout = 10000
+      xhr.onreadystatechange = () => {
+        // 此时服务器已返回数据，重新建立连接
+        if (xhr.readyState === 4) {
+          const content = document.getElementById("message")
+          content.innerHTML = `${content.innerHTML}\n${xhr.responseText}`
+          ajax()
+        }
+      }
+      xhr.send()
+    }
+    window.onload = () => {
+      // long polling
+      ajax()
+
+      // sse
+      const source = new EventSource('/sse')
+      source.addEventListener('test1', (res) => {
+        console.log(res)
+      }, false)
+      source.onopen = () => {
+        console.log('open sse')
+      }
+      source.onerror = (err) => {
+        console.log(err)
+      }
+
+      // socket.io-client
+      const ws = io('ws://127.0.0.1:5001');
+      ws.on('connect', (evt) => {
+        console.log('opened')
+        ws.send('hello from client')
+      })
+      ws.on('message', (evt) => {
+        console.log(`from server: ${evt}`)
+        ws.close()
+      });
+      ws.on('disconnect', () => { });
+
+      // websocket原生写法
+      // const ws = new WebSocket('ws://127.0.0.1:5001')
+      // ws.readyState 0 正在连接 1 已连接 2 正在关闭 3 已关闭
+      // ws.onopen = (evt) => {
+      //   console.log('opened')
+      //   ws.send('hello from client')
+      // }
+      // ws.onmessage = (evt) => {
+      //   console.log(`from server: ${evt.data}`)
+      //   ws.close()
+      // }
+    }
+    document.getElementById("sub").onclick = () => {
+      const xhr = new XMLHttpRequest()
+      const text = document.getElementById("text").value
+      xhr.open('POST', '/message')
+      xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhr.send(`message=${text}`)
+    }
+  </script>
+</body>
+</html>

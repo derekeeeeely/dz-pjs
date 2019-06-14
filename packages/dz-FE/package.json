@@ -1,0 +1,26 @@
+{
+  "name": "dz-fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derekeeeeely/dz-FE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derekeeeeely/dz-FE/issues"
+  },
+  "homepage": "https://github.com/derekeeeeely/dz-FE#readme",
+  "dependencies": {
+    "koa": "^2.5.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-route": "^3.2.0",
+    "koa-static": "^5.0.0",
+    "socket.io": "^2.1.1"
+  }
+}

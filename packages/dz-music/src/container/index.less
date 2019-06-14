@@ -1,0 +1,33 @@
+.dz-music{
+  display: flex;
+  display: -webkit-flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #e5e5e5;
+  .dz-music-header{
+    background: #ffffff;
+    height: 50px;
+    .title{
+      padding: 10px 0 10px 20px;
+      font-size: 20px;
+    }
+  }
+  .dz-music-container{
+    display: flex;
+    flex: 12;
+    flex-direction: row;
+    .dz-music-leftnav{
+      max-width: 240px;
+      flex: 2;
+      background: #001529;
+    }
+    .dz-main-container{
+      flex: 8;
+      overflow-y: scroll;
+    }
+  }
+  .dz-music-footer{
+    height: 60px;
+    background: #ffffff;
+  }
+}

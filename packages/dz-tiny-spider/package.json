@@ -1,0 +1,25 @@
+{
+  "name": "tiny-spider",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "colors": "^1.2.1",
+    "crawler": "^1.1.2",
+    "csv-write-stream": "^2.0.0",
+    "form-data": "^2.3.2",
+    "fs": "^0.0.1-security",
+    "json-to-csv": "^1.0.0",
+    "leveldown": "^3.0.0",
+    "levelup": "^2.0.2",
+    "mysql": "^2.15.0",
+    "qs": "^6.5.1",
+    "stream": "^0.0.2",
+    "through2": "^2.0.3"
+  },
+  "devDependencies": {
+    "ws": "3.3.2"
+  }
+}

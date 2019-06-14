@@ -1,0 +1,110 @@
+{
+	"info": {
+		"address": "杭州市下城区东新路655号1楼1-17号商铺及2楼2-11号商铺",
+		"authentic_id": 8362899891818603,
+		"delivery_mode": {
+			"border": "",
+			"color": "2395FF",
+			"gradient": {
+				"rgb_from": "00AAFF",
+				"rgb_to": "0085FF"
+			},
+			"icon_hash": "b9b45d2f6ff0dbeef3a78ef0e4e90abapng",
+			"id": 1,
+			"is_solid": true,
+			"text": "蜂鸟专送",
+			"text_color": "FFFFFF"
+		},
+		"description": "Taste is King！Home of the WHOPPER！ 汉堡王饿货专享福利震撼上线，点单就选饿了么！",
+		"distance": 971,
+		"favored": false,
+		"float_delivery_fee": 4,
+		"float_minimum_order_amount": 20,
+		"has_story": false,
+		"id": 1334003,
+		"image_path": "https://fuss10.elemecdn.com/e/17/27fa41fc2b03b1b8c2d794a5cf139jpeg.jpeg",
+		"is_new": false,
+		"is_premium": true,
+		"is_stock_empty": 0,
+		"is_valid": 1,
+		"latitude": 30.31656,
+		"longitude": 120.17306,
+		"max_applied_quantity_per_order": 1,
+		"name": "汉堡王（杭州金逸店22394）",
+		"next_business_time": "",
+		"only_use_poi": false,
+		"opening_hours": ["09:00/21:45"],
+		"order_lead_time": 27,
+		"phone": "0571-87919035",
+		"piecewise_agent_fee": {
+			"description": "配送费¥4",
+			"extra_fee": 0,
+			"is_extra": false,
+			"rules": [{
+				"fee": 4,
+				"price": 20
+			}],
+			"tips": "配送费¥4"
+		},
+		"platform": 0,
+		"posters": [{
+			"id": 1640585,
+			"image_hash": "1e22869c6c6dbaa2e1b4f7085251d406png",
+			"name": "全新升级",
+			"url": "eleme://restaurant_promotion?restaurant_id=1334003&banner_id=1640585"
+		}],
+		"promotion_info": "",
+		"rating": 5,
+		"rating_count": 1444,
+		"recent_order_num": 3268,
+		"recommend": {
+			"is_ad": false,
+			"reason": ""
+		},
+		"recommend_reasons": [{
+			"name": "味道超赞"
+		}, {
+			"name": "回头客多"
+		}, {
+			"name": "配送飞快"
+		}],
+		"regular_customer_count": 0,
+		"scheme": "eleme://catering?restaurant_id=1334003",
+		"shop_sign": {
+			"brand_story": "954年，詹姆士·麦克拉摩(James Mclamore)及大卫·艾杰敦(David Edgerton)在美国佛罗里达州迈阿密共同经营创设第一家“汉堡王”(Burger King)餐厅。两位“汉堡王”创办人始终保持着要提供给顾客合理的价格、高品质的产品、快速的服务以及干净的环境的理念。经过无数次的失败和教训，终于将一家寒酸的小店变为拥有上千家分店，资产达数十亿美元的商业帝国，成为流行文化不可或缺的",
+			"image_hash": "a29c684fdb1f737252238edfcb2b8ab9png"
+		},
+		"status": 1,
+		"support_tags": [],
+		"supports": [{
+			"description": "该商家支持开发票，请在下单时填写好发票抬头",
+			"icon_color": "999999",
+			"icon_name": "票",
+			"id": 4,
+			"name": "开发票",
+			"two_characters_icon_name": "发票"
+		}],
+		"type": 0,
+		"weight": {
+			"basic": 20000,
+			"maximum": 20000,
+			"unit": 20000,
+			"unit_fee": 20000
+		}
+	},
+	"ratings": {
+		"score": {
+			"compare_rating": 0.7224791859389454,
+			"deliver_time": 38,
+			"food_score": 4.58391,
+			"order_rating_amount": 1718,
+			"overall_score": 4.96483,
+			"service_score": 5
+		},
+		"tags": [{
+			"count": 42,
+			"name": "味道好",
+			"unsatisfied": false
+		}]
+	}
+}

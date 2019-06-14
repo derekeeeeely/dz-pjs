@@ -1,0 +1,28 @@
+.ekko-search{
+  padding: 15px 15px 0 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  .search-item{
+    display: flex;
+    align-items: center;
+    height: 34px;
+    line-height: 34px;
+    margin-bottom: 15px;
+    .title{
+      margin: 0 10px;
+    }
+    .comp{
+      flex: 1;
+    }
+  }
+  .search-button-group{
+    flex: 1;
+    text-align: right;
+    :global .ant-btn{
+      margin: 0 5px;
+    }
+  }
+}
