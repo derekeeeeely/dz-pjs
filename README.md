@@ -12,4 +12,5 @@
 | dz-music | 一个音乐小站 | react neteasemusic spa |
 | dz-pandora | pandora尝试 | pandora |
 | dz-puppeteer | puppeteer尝试 | puppeteer |
-| dz-tiny-spider | 一些小爬虫 | nodejs crawler |
+| dz-spider | 一些小爬虫 | node-crawler pandora puppeteer |
+| dz-quicksilver | tms运营系统尝试 | react dnd |

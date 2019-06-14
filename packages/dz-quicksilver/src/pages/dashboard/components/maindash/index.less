@@ -1,0 +1,47 @@
+.alita-maindash{
+  flex: 1;
+  background: #fff;
+  margin-left: 50px;
+  display: flex;
+  .canvas-area {
+    padding: 20px;
+    border-right: 20px solid #f0f2f5;
+    flex: 2;
+  }
+  .content-area {
+    min-width: 240px;
+    padding: 20px;
+    flex: 1;
+  }
+  .title{
+    font-size: 20px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  .operation-area{
+    display: flex;
+    padding: 20px 60px;
+    justify-content: space-evenly;
+  }
+  .dash-area{
+    border: 1px solid #aaa;
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+    padding: 20px;
+    padding-left: 30%;
+    > div{
+      margin-bottom: 20px;
+      position: relative;
+    }
+    > div.choosen{
+      box-shadow: 0 0 2px 2px #1489e7;
+    }
+    .close-icon{
+      position: absolute;
+      left: -40px;
+      top: calc(50% - 10px);
+      font-size: 20px;
+    }
+  }
+}
