@@ -15,7 +15,7 @@
     "bundle-loader": "^0.5.5",
     "css-loader": "^0.28.9",
     "file-loader": "^1.1.6",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "style-loader": "^0.20.1",
