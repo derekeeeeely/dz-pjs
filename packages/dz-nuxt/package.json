@@ -18,7 +18,7 @@
     "path": "^0.12.7",
     "qs": "^6.4.0",
     "sass-loader": "^6.0.3",
-    "sequelize": "^3.30.4"
+    "sequelize": "^6.3.5"
   },
   "scripts": {
     "dev": "NODE_ENV=development node server.js",
